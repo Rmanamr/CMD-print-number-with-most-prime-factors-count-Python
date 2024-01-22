@@ -43,18 +43,17 @@ def main():
 
         most_Number_Of_Prime_Factors = input_Numbers_Dictionary.get(keys_List[0])
         # storing number of prime factors of the first key in max_Number_Of_Prime_Factors variable
-        index_Of_The_Number_With_Most_Prime_Factors = 0
+        number_With_Most_Prime_Factors = keys_List[0]
 
         for key, value in input_Numbers_Dictionary.items():
-                if(value > most_Number_Of_Prime_Factors):
-                   most_Number_Of_Prime_Factors = value
-                   for key_1, value_1 in input_Numbers_Dictionary.items():
-                       if value_1 == most_Number_Of_Prime_Factors:
-                           index_Of_The_Number_With_Most_Prime_Factors = key_1
-                elif(key > index_Of_The_Number_With_Most_Prime_Factors):
-                    index_Of_The_Number_With_Most_Prime_Factors = key
+            if(value > most_Number_Of_Prime_Factors):
+                most_Number_Of_Prime_Factors = value
+                number_With_Most_Prime_Factors = key
+            if(value == most_Number_Of_Prime_Factors):
+                if(key > number_With_Most_Prime_Factors ):
+                    number_With_Most_Prime_Factors = key
 
-        print("Number", index_Of_The_Number_With_Most_Prime_Factors, "has the most prime factors count and the number of its prime factors is:", most_Number_Of_Prime_Factors)
+        print("Number", number_With_Most_Prime_Factors, "has the most prime factors count and the number of its prime factors is:", most_Number_Of_Prime_Factors)
         print("*********************************************************************")
         
 
