@@ -1,4 +1,4 @@
-# CMD-print-number-with-most-prime-factors-count-Python V 1.0 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+# CMD-print-number-with-most-prime-factors-count-Python V 1.1 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 Python CMD program for printing the number with most prime factors, from a list of 10 entered numbers.    
 using Python version 3.12.0  
   
